@@ -8,8 +8,8 @@ use MicrosoftAzure\Storage\Blob\Models\ListBlobsOptions;
 use MicrosoftAzure\Storage\Blob\Models\CreateContainerOptions;
 use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
 
-$connectionString = "DefaultEndpointsProtocol=https;AccountName=dicoding;AccountKey=KBlYJdOxttoOjNvxBioXtJBR7uxzbjohMgzXaCC9l7R2oHmzhwqTTpd9F6brtrBnFP28BV1eYhwEzRETV4QOOA==;";
-$containerName = "blobrizqi";
+$connectionString = "DefaultEndpointsProtocol=https;AccountName=dicoding;AccountKey=/mpKAIDEXW6fUu3YOv5MskbO3d7OvxHNP2gNdLlhFJTJoqkgmImc26Oa2sexpAu4Gpp1wYMacq4iITsP7xm6Tw==;";
+$containerName = "example";
 // Create blob client.
 $blobClient = BlobRestProxy::createBlobService($connectionString);
 if (isset($_POST['submit'])) {
