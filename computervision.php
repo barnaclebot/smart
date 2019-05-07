@@ -39,10 +39,10 @@ if (isset($_POST['submit'])) {
 		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
 			<ul class="navbar-nav mr-auto">
 			<li class="nav-item">
-				<a class="nav-link" href="https://smart-parkir.azurewebsites.net/">Home</a>
+				<a class="nav-link" href="https://webappexample.azurewebsites.net/">Home</a>
 			</li>
 			<li class="nav-item active">
-				<a class="nav-link" href="https://smart-parkir.azurewebsites.net/analyze.php">Analisis Kendaraan<span class="sr-only">(current)</span></a>
+				<a class="nav-link" href="https://webappexample.azurewebsites.net/analyze.php">Analisis Kendaraan<span class="sr-only">(current)</span></a>
 			</li>
 		</div>
 		</nav>
@@ -71,9 +71,7 @@ if (isset($_POST['submit'])) {
             "https://southeastasia.api.cognitive.microsoft.com/vision/v2.0/analyze";
             // Request parameters.
             var params = {
-                "visualFeatures": "Categories,Description,Color",
-                "details": "",
-                "language": "en",
+                "tags": ""
             };
             // Display the image.
             var sourceImageUrl = "<?php echo $url ?>";
