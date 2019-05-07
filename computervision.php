@@ -71,7 +71,9 @@ if (isset($_POST['submit'])) {
             "https://southeastasia.api.cognitive.microsoft.com/vision/v2.0/analyze";
             // Request parameters.
             var params = {
-                "tags": ""
+                "visualFeatures": "Categories,Description,Color",
+                "details": "",
+                "language": "en",
             };
             // Display the image.
             var sourceImageUrl = "<?php echo $url ?>";
@@ -117,8 +119,6 @@ if (isset($_POST['submit'])) {
 		<b>Source Image:</b>
 		<br><br>
 		<img id="sourceImage" width="400" />
-		<br>
-		<h3 id="description">Loading description. . .</h3>
 	</div>
 </div>
 </body>
