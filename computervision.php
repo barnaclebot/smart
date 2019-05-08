@@ -3,10 +3,10 @@ if (isset($_POST['submit'])) {
 	if (isset($_POST['url'])) {
 		$url = $_POST['url'];
 	} else {
-		header("Location: analyze.php");
+		header("Location: index.php");
 	}
 } else {
-	header("Location: analyze.php");
+	header("Location: index.php");
 }
 ?>
 
@@ -17,9 +17,8 @@ if (isset($_POST['submit'])) {
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             <meta name="description" content="">
             <meta name="author" content="">
-            <link rel="icon" href="https://raw.githubusercontent.com/muhrizky/Smart-Parkir/master/parking_meter__2__Mrq_icon.ico">
 
-            <title>Undip Smart Parkir</title>
+            <title>Animal Analyze</title>
 
             <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
 
@@ -39,17 +38,13 @@ if (isset($_POST['submit'])) {
 		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
 			<ul class="navbar-nav mr-auto">
 			<li class="nav-item">
-				<a class="nav-link" href="https://webappexample.azurewebsites.net/">Home</a>
-			</li>
-			<li class="nav-item active">
-				<a class="nav-link" href="https://webappexample.azurewebsites.net/analyze.php">Analisis Kendaraan<span class="sr-only">(current)</span></a>
+				<a class="nav-link" href="https://webappexample.azurewebsites.net/">Animal Analysis System</a>
 			</li>
 		</div>
 		</nav>
 		<main role="main" class="container">
     		<div class="starter-template"> <br><br><br>
-        		<h1>Hasil Analisis Kendaraan</h1>
-				<p class="lead">Berikut merupakan hasil analisis kendaraan yang <b>Anda</b> Upload <br> Karakteristik Foto kendaraan ada pada kolom Response.</p>
+        		<h1>Results of Image Analysis</h1>
 				<span class="border-top my-3"></span>
 			</div>
         <script type="text/javascript">
@@ -120,7 +115,6 @@ if (isset($_POST['submit'])) {
 		<br><br>
 		<img id="sourceImage" width="400" />
 		<br>
-		<h3 id="description">Loading description. . .</h3>
 	</div>
 </div>
 </body>
