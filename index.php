@@ -56,12 +56,12 @@
 				<input type="file" name="fileToUpload" accept=".jpeg,.jpg,.png" required="">
             </form>
         </div>
-            <input type="submit" class="btn btn-success" name="submit" value="Submit Data Kendaraan" action="index.php" method="post" enctype="multipart/form-data">
+            <input type="submit" class="btn btn-success" name="submit" value="Simpan Data Hewan" action="index.php" method="post" >
         </form>
         <!-- <br><br> -->
         <form action="index.php" method="GET">
           <div class="form-group">
-            <input type="submit" class="btn btn-info" name="load_data" value="Lihat Data Yang Sudah Registrasi">
+            <input type="submit" class="btn btn-info" name="load_data" value="Lihat Data Hewan">
           </div>
         </form>   
    
